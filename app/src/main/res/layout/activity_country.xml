@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CountryActivity">
+
+    <Button
+        android:id="@+id/btnKorean"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="한식"
+        android:onClick="koreanFood"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/bg_btn"/>
+
+    <Button
+        android:id="@+id/btnChinese"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="중식"
+        android:onClick="chineseFood"
+        app:layout_constraintTop_toBottomOf="@id/btnKorean"
+        android:background="@drawable/bg_btn"/>
+    <Button
+        android:id="@+id/btnJapan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="일식"
+        android:onClick="japaneseFood"
+        app:layout_constraintTop_toBottomOf="@id/btnChinese"
+        android:background="@drawable/bg_btn"/>
+    <Button
+        android:id="@+id/btnWestern"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="양식"
+        android:onClick="westernFood"
+        app:layout_constraintTop_toBottomOf="@id/btnJapan"
+        android:background="@drawable/bg_btn"/>
+    <Button
+        android:id="@+id/btnAsia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="아시아식"
+        android:onClick="asiaFood"
+        app:layout_constraintTop_toBottomOf="@id/btnWestern"
+        android:background="@drawable/bg_btn"/>
+
+    <Button
+        android:id="@+id/btnSelect"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="100dp"
+        android:layout_marginLeft="20dp"
+        android:text="랜덤 선택"
+        android:onClick="clickSelect"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <TextView
+        android:id="@+id/selCountry"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:background="#8877dd"
+        android:textSize="20dp"
+        android:textColor="#ffffff"
+        app:layout_constraintLeft_toRightOf="@id/btnSelect"
+        android:text="선택된 국가\n계속하려면 클릭"
+        android:gravity="center"
+        app:layout_constraintTop_toTopOf="@id/btnSelect"
+        app:layout_constraintBottom_toBottomOf="@id/btnSelect"
+        android:clickable="true"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

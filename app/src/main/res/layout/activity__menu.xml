@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="8dp"
+    tools:context=".MenuActivity">
+
+    <Button
+        android:id="@+id/tv_country"
+        android:layout_width="0dp"
+        app:layout_constraintDimensionRatio="0.8"
+        android:layout_height="230dp"
+        android:layout_marginTop="60dp"
+        android:backgroundTint="#CBFA4005"
+        android:gravity="center_horizontal|center_vertical"
+        android:onClick="clickCoun"
+        android:text="국가별 메뉴"
+        android:textColor="#ffffff"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+
+    <Button
+        android:id="@+id/tv_ingre"
+        android:layout_width="0dp"
+        app:layout_constraintDimensionRatio="0.8"
+        android:layout_height="230dp"
+        android:layout_marginTop="60dp"
+        android:backgroundTint="#AEF66C10"
+        android:gravity="center_horizontal|center_vertical"
+        android:onClick="clickIng"
+        android:text="주 재료별 \n메뉴"
+        android:textColor="#ffffff"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/tv_desert"
+        android:layout_width="0dp"
+        app:layout_constraintDimensionRatio="0.8"
+        android:layout_height="230dp"
+        android:layout_marginBottom="60dp"
+        android:backgroundTint="#AEF66C10"
+        android:gravity="center_horizontal|center_vertical"
+        android:onClick="clickAfter"
+        android:text="식후\n(2차)"
+        android:textColor="#ffffff"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+
+    <Button
+        android:id="@+id/tv_ect"
+        android:layout_width="0dp"
+        app:layout_constraintDimensionRatio="0.8"
+        android:layout_height="230dp"
+        android:layout_marginBottom="60dp"
+        android:backgroundTint="#CBFA4005"
+        android:gravity="center_horizontal|center_vertical"
+        android:onClick="clickEct"
+        android:text="직접 선택\nGOGO"
+        android:textColor="#ffffff"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+<!--    <Button-->
+<!--        android:id="@+id/tv_else"-->
+<!--        android:layout_width="0dp"-->
+<!--        app:layout_constraintDimensionRatio="1.1"-->
+<!--        android:layout_height="150dp"-->
+<!--        android:layout_marginBottom="24dp"-->
+<!--        android:backgroundTint="#83EA9B67"-->
+<!--        android:gravity="center_horizontal|center_vertical"-->
+<!--        android:onClick="clickElse"-->
+<!--        android:text="기타"-->
+<!--        android:textColor="#ffffff"-->
+<!--        android:textSize="30dp"-->
+<!--        android:textStyle="bold"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintLeft_toLeftOf="parent"-->
+<!--        />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/tv_random"-->
+<!--        android:layout_width="0dp"-->
+<!--        app:layout_constraintDimensionRatio="1.1"-->
+<!--        android:layout_height="150dp"-->
+<!--        android:layout_marginBottom="24dp"-->
+<!--        android:backgroundTint="#83EA9B67"-->
+<!--        android:gravity="center_horizontal|center_vertical"-->
+<!--        android:onClick="clickRandom"-->
+<!--        android:text="바로 랜덤메뉴 GO"-->
+<!--        android:textColor="#ffffff"-->
+<!--        android:textSize="30dp"-->
+<!--        android:textStyle="bold"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintRight_toRightOf="parent"-->
+<!--        />-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>
